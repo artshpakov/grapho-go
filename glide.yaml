@@ -1,9 +1,12 @@
 package: github.com/artshpakov/grapho
 ignore:
   - api
+  - graph
   - models
 import:
   - package: github.com/Sirupsen/logrus
     version: ^0.11.2
-  - package: github.com/gin-gonic/gin
-    version: ^1.1.4
+  - package: github.com/graphql-go/graphql
+  - package: github.com/graphql-go/handler
+  - package: github.com/go-pg/pg
+  - package: github.com/BurntSushi/toml

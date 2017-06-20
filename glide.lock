@@ -1,31 +1,41 @@
-hash: fec093285617495d61c3742b46d88722119d74e5a8f6631249c17186df4f4c6a
-updated: 2017-06-14T14:37:50.089981073+03:00
+hash: 467c7afa938ac82bd3a37607d19c09a8813c16cc168a0eb453998f3165ee2c4e
+updated: 2017-06-22T11:51:51.583365991+03:00
 imports:
-- name: github.com/gin-gonic/gin
-  version: e2212d40c62a98b388a5eb48ecbdcf88534688ba
+- name: github.com/BurntSushi/toml
+  version: b26d9c308763d68093482582cea63d69be07a0f0
+- name: github.com/go-pg/pg
+  version: 992df09ab835e4e1c60ba399225b9343c88de0f1
   subpackages:
-  - binding
-  - render
-- name: github.com/golang/protobuf
-  version: 2402d76f3d41f928c7902a765dfc872356dd3aad
+  - internal
+  - internal/parser
+  - internal/pool
+  - orm
+  - types
+- name: github.com/graphql-go/graphql
+  version: fe52096df4714b0c66bd7921ade11c976acb51a2
   subpackages:
-  - proto
-- name: github.com/manucorporat/sse
-  version: ee05b128a739a0fb76c7ebd3ae4810c1de808d6d
-- name: github.com/mattn/go-isatty
-  version: fc9e8d8ef48496124e79ae0df75490096eccf6fe
+  - gqlerrors
+  - language/ast
+  - language/kinds
+  - language/lexer
+  - language/location
+  - language/parser
+  - language/printer
+  - language/source
+  - language/typeInfo
+  - language/visitor
+- name: github.com/graphql-go/handler
+  version: 07e3dd439c1f4ec14e685af7c48e8863bcc42c9d
+- name: github.com/jinzhu/inflection
+  version: 1c35d901db3da928c72a72d8458480cc9ade058f
+- name: github.com/lib/pq
+  version: 8837942c3e09574accbc5f150e2c5e057189cace
+  subpackages:
+  - oid
 - name: github.com/Sirupsen/logrus
   version: ba1b36c82c5e05c4f912a88eab0dcd91a171688f
 - name: golang.org/x/net
   version: f315505cf3349909cdf013ea56690da34e96a451
   subpackages:
   - context
-- name: golang.org/x/sys
-  version: 0b25a408a50076fbbcae6b7ac0ea5fbb0b085e79
-  subpackages:
-  - unix
-- name: gopkg.in/go-playground/validator.v8
-  version: c193cecd124b5cc722d7ee5538e945bdb3348435
-- name: gopkg.in/yaml.v2
-  version: cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b
 testImports: []

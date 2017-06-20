@@ -1,2 +1,4 @@
+.DS_Store
 vendor
 grapho
+config/config.toml
