@@ -2,3 +2,5 @@
 vendor
 grapho
 config/config.toml
+public/*
+node_modules/

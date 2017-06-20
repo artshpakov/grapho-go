@@ -56,6 +56,10 @@ func main() {
 		result := executeQuery(r.URL.Query()["q"][0], schema)
 		json.NewEncoder(w).Encode(result)
 	})
+	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		http.ServeFile(w, r, "src/assets/index.html")
+	})
 
 	fmt.Println("Server is running on port 3000")
 	http.ListenAndServe(":3000", nil)

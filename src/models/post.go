@@ -30,6 +30,6 @@ func FetchPosts(db *pg.DB, limit int, ids []interface{}, userID interface{}) ([]
 
 func PostsFindByAuthor(db *pg.DB, userID int) ([]Post, error) {
 	posts := make([]Post, 0)
-	err := db.Model(&posts).Where("user_id = ?", userID).Select()
+	err := db.Model(&posts).Where("user_id = ?", userID).Order("created_at DESC").Select()
 	return posts, err
 }
