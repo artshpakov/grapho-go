@@ -1,0 +1,6 @@
+pipeline:
+  api:
+    image: artshpakov/grapho-go
+    commands:
+      - glide install
+      - go build src/grapho.go
